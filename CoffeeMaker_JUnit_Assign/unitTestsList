@@ -1,0 +1,51 @@
+# Unit tests list
+
+- addRecipe
+1. add recipe null - false
+2. add recipe which does not exist and check it is added - true
+3. add recipe which already exists and check it is not added - false
+4. add recipe when there is an empty spot and check it is added - true
+5. add recipe when there is not an empty spot and check it is not added - false
+
+- deleteRecipe
+1. delete recipe with negative index - null
+2. delete recipe which does not exist - null
+3. delete recipe which already exists - recipe name
+
+- editRecipe
+1. edit recipe index below zero - null
+2. edit recipe index above length - null
+3. edit recipe index above max length - null
+4. edit recipe which already exists with null - null
+5. edit recipe which already exists with new recipe - recipe name
+
+- addInventory
+1a. add null coffee - false
+1b. add negative coffee - false
+1c. add alpha coffee - false
+1d. add positive int coffee - true
+1e. add zero coffee - true
+1f. add negative zero - true
+
+2a. add null sugar - false
+2b. add negative sugar - false
+2c. add alpha sugar - false
+2d. add positive int sugar - true
+
+3a. add null chocolate - false
+3b. add negative chocolate - false
+3c. add alpha chocolate - false
+3d. add positive int chocolate - true
+
+4a. add null milk - false
+4b. add negative milk - false
+4c. add alpha milk - false
+4d. add positive int milk - true
+
+- makeCoffee
+1. order recipe which does not exist - change == amount paid
+2. order recipe which requires too many ingredients - change == amount paid
+3. order recipe, not enough money paid - change == amount paid
+4. order recipe which does exist, money is enough - change == paid-price
+
+
