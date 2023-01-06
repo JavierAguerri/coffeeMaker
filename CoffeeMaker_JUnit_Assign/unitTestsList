@@ -43,9 +43,11 @@
 4d. add positive int milk - true
 
 - makeCoffee
-1. order recipe which does not exist - change == amount paid
-2. order recipe which requires too many ingredients - change == amount paid
-3. order recipe, not enough money paid - change == amount paid
-4. order recipe which does exist, money is enough - change == paid-price
+1. order recipe negative index - change == amound paid
+2. order recipe above range - change == amound paid
+3. order recipe which does not exist - change == amount paid
+4. order recipe which requires too many ingredients - change == amount paid
+5. order recipe, not enough money paid - change == amount paid
+6. order recipe which does exist, money is enough - change == paid-price
 
 
