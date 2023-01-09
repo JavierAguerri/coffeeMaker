@@ -47,7 +47,6 @@ public class CoffeeMakerTest {
 	private Recipe recipe2;
 	private Recipe recipe3;
 	private Recipe recipe4;
-	private Recipe recipe5;
 
 	/**
 	 * Initializes some recipes to test with and the {@link CoffeeMaker} 
